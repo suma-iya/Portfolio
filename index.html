@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sumaiya Rahim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activites">Extracurricular Activities</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sumaiya Rahim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#activites" onclick="toggleMenu()">Extracurricular Activites</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+          <img
+           src="./assets/sharee.jpg";
+           alt="Sumaiya Rahim"
+           class="profile-pic" 
+         img>
+        </div>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Sumaiya Rahim</h1>
+      <p class="section__text__p2">50% Engineer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/resume-example.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/png-transparent-linkedin-logo-computer-icons-comcast-business-get-started-now-button-blue-text-trademark-thumbnail.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sumaiya-rahim-733485294/'"
+        />
+        <img
+          src="./assets/Github-22.jpg"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/suma-iya'"
+        />
+      </div>
+    </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/picture.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>As I am still an undergraduate, I don't have much experience. <br/> Worked on a few Projects using C++, JAVA, Python, PHP, ASP.net</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.jpg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>SSC(VNS), HSC(VNSC)<br/>Pursuing B.Sc. Engineering Degree(KUET)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Currently I'm living in Khulna. I'm a 3rd year CSE student at KUET. I'm an avid learner and got so much patience. Somedays 
+              I love what I learn and somedays I don't.
+            <br/>
+              I learnt C++ when I got into KUET. Now I know many other languages like Java, Python, PHP, HTML, CSS. I took parts in different Competitive Programming Contests. I did 
+              take part in a national programming contest as well. It was an overwhelming moment for me as there were so many people I look up to.
+              As a kid, I never got to pick a hobby, so I think of this like a hobby. 
+              I would love to explore more sectors of CSE before joining actual job.
+              <br/>
+              Other than that, I love reading books, watching movies and more specifically melodramas and  
+              talking to friends. I also like staying busy.   
+ 
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/downicon.png.crdownload"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./assets/th.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        
+      <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+            <img
+              src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>C</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img
+            src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>C++</h3>
+              <p>Experienced</p>
+            </div>
+          </article>
+          <article>
+            <img
+            src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+            src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Java</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img
+            src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+            src="./assets/th.jpeg"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>PHP</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/businesss_again.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Business Management</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/suma-iya/Business_Management_System'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/learning.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CodeVerse<br>MyLearningApp</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/suma-iya/MyLearningApp'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/moviepic.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Archive <br> EasyPick</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="activites">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">Extracurricular Activites</h1>
+      <!-- <div class="contact-info-upper-container"> -->
+        <div class="activity-info-container">
+          <img
+            src="./assets/leetcodeicon.jpg"
+            alt="leetcode icon"
+            class="leetcode-icon"
+          />
+        </div>
+        <div>
+          <p><strong><a href="https://leetcode.com/ultra_plusplus/">ultra_plusplus</a></strong></p>
+          <p>I enjoy doing leetcode. I got 4 badges in leetcode due to my dedication towards problem. Solved more
+          than 230 Problems. I try to do the daily challenges every day no matter how busy I am. </p>
+        </div>
+        <div class="activity-info-container">
+          <img
+            src="./assets/codeforces3.png"
+            alt="Codeforces icon"
+            class="codeforces-icon"
+          />
+        </div>
+      <div>
+        <strong> <p><a href="https://codeforces.com/profile/another_ded_girl">another_ded_girl</a></p></strong>
+        <p>I also do contest programming in <strong>Codeforces</strong> and I solved more than 100 problems there. I am working on making my logic stronger.</p>
+      </div>
+      <div class="activity-info-container">
+        <img
+          src="./assets/lightoj.png"
+          alt="Lightoj icon"
+          class="lightoj-icon"
+        />
+      </div>
+    <div>
+      <strong> <p><a href="https://codeforces.com/profile/another_ded_girl">ultra_plusplus</a></p></strong>
+      <p>I also do problem solving in <strong>Lightoj</strong> and I solved more than 50 problems there. I am working on making my logic stronger.</p>
+    </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sumaiya.rahim234@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/Linkedin-Logo-Png-Transparent-Background-1.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sumaiya-rahim-733485294/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+   
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <p>Copyright &#169; . All Rights Reserved.</p> -->
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
