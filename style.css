@@ -273,12 +273,14 @@ body {
   gap: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  height: 30%;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  height: 90%;
 }
 
 .about-containers,
@@ -336,43 +338,66 @@ body {
   margin: auto 0;
 }
 
+
 /* EXPERIENCE SECTION */
 
-#experience {
-  position: relative;
-}
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+/* Specific adjustments for the experience section */
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-details-container {
+  margin-bottom: 2rem;
+  max-width: 600px; /* Limit the maximum width */
+  width: 100%;
+}
+
+.options {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
 }
 
-.article-container {
+.option {
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+.skill-name {
+  margin-right: 10px;
+  color: #333;
+  width: 60px; /* Fixed width for skill names */
 }
 
-article .icon {
-  cursor: default;
+.scale {
+  position: relative;
+  width: 35vw; /* Adjusted width */
+  height: 5px; /* Adjusted height */
+  background-color: #ddd;
+  border-radius: 10px; /* Rounded border */
+  margin-top: 8px; /* Add some margin */
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #3498db; /* Blue color */
+  border-radius: 10px; /* Rounded border */
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: black;
 }
 
 /* PROJECTS SECTION */
