@@ -45,6 +45,7 @@
   .about-containers {
     margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -52,9 +53,21 @@
   footer {
     height: 40vh;
   }
+  #contact,
+  #activities {
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 2rem; /* Add margin at the bottom for spacing */
+  }
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+  /* #project {
+    width: 100%;
+  } */
+ 
+  .about-containers {
+    flex-direction: column;
   }
   article {
     font-size: 1rem;
@@ -101,3 +114,4 @@
     text-align: justify;
   }
 }
+

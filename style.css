@@ -5,8 +5,9 @@
     padding: 0;
 }
 body {
-    
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  color: rgb(85, 85, 85);
   }
   
   html {
@@ -494,8 +495,7 @@ Center the containers vertically
 
 
 
-/* CONTACT */
-
+/* Contact Section */
 
 #contact {
   position: relative;
@@ -624,27 +624,4 @@ Center the containers vertically
   text-align: center; /* Center-align text */
   font-size: 0.9rem; /* Set font size */
   color: #666; /* Change text color */
-}
-
-
-
-/* activites */
-.codeforces-icon{
-  height: 2.5rem;
-}
-.leetcode-icon{
-  height: 2.5rem;
-}
-.lightoj-icon{
-  height: 3rem;
-}
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
 }
