@@ -5,10 +5,12 @@
     padding: 0;
 }
 body {
+    
     font-family: "Poppins", sans-serif;
   }
   
   html {
+    font-size:70%;
     scroll-behavior: smooth;
   }
   
@@ -37,6 +39,8 @@ body {
   }
   
   .nav-links {
+    border-bottom: 2px solid rgb(182, 182, 231); /* Add bottom border to the container */
+    padding-bottom: 10px; 
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
@@ -49,8 +53,8 @@ body {
   }
   
   a:hover {
-    color: grey;
-    text-decoration: underline;
+    color: rgb(136, 136, 232);
+    text-decoration: initial;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
   }
@@ -93,7 +97,7 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgb(250, 246, 246);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -205,7 +209,11 @@ body {
   cursor: pointer;
   height: 2rem;
 }
-
+.leet-icon{
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 10rem;
+}
 /* BUTTONS */
 
 .btn-container {
@@ -218,7 +226,7 @@ body {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 12rem;
   border-radius: 2rem;
 }
 
@@ -234,40 +242,43 @@ body {
 
 .btn-color-1,
 .btn-color-2 {
-  background: rgb(217, 216, 216);
+  background: rgb(192, 192, 227);
   color: rgb(53, 53, 53);
 }
 
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
+  border: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
-  background: none;
+  background: rgb(248, 246, 246);
 }
 
 .btn-color-2:hover {
+  background: rgb(17, 2, 65);
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
-  gap: 1rem;
+  gap: .5rem;
 }
   /* ABOUT SECTION */
-
+ /* ABOUT SECTION */
 #about {
   position: relative;
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .about-containers,
@@ -275,8 +286,27 @@ body {
   display: flex;
 }
 
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.about__info-title {
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: black; /* Adjust the color as needed */
+  margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.about__info-name {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
 .about-pic {
   border-radius: 1rem;
+  height: 100%;
 }
 
 .arrow {
@@ -287,12 +317,11 @@ body {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
 }
 
@@ -375,43 +404,138 @@ article .icon {
 
 /* CONTACT */
 
+
 #contact {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  background-color: white; /* Set background color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+#contact .scroll__text-top {
+  display: none; /* Hide scroll text */
+}
+
+#contact .section__text__p1 {
+  font-size: 1.2rem; /* Increase font size for section description */
+  color: #333; /* Change text color */
+}
+
+#contact .title {
+  font-size: 2.5rem; /* Increase font size for title */
+  margin-bottom: 1rem; /* Add margin bottom */
+  color: #333; /* Change text color */
+}
+
+#contact .contact-content {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  justify-content: space-between; /* Align content evenly */
 }
 
-.contact-info-upper-container {
+#contact .column {
+  flex: 1; /* Allow columns to take equal width */
+  margin-right: 2rem; /* Add margin between columns */
+}
+
+#contact .contant_text_inv {
+  font-size: 1.1rem; /* Set font size */
+  margin-bottom: 1.5rem; /* Add margin bottom */
+  color: #555; /* Change text color */
+}
+
+#contact .icons {
+  margin-bottom: 2rem; /* Add margin bottom */
+}
+
+#contact .row {
   display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 1rem; /* Add margin bottom */
 }
 
-.contact-info-container {
+#contact .row i {
+  font-size: 1.5rem; /* Set icon size */
+  margin-right: 1rem; /* Add margin right */
+  color: #333; /* Change icon color */
+}
+
+#contact .info {
+  font-size: 1rem; /* Set font size */
+}
+
+#contact .info .sub-title {
+  color: #666; /* Change text color */
+}
+
+#contact .right {
+  flex: 1; /* Allow form column to take remaining width */
+}
+
+#contact .text {
+  font-size: 1.2rem; /* Set font size */
+  margin-bottom: 1.5rem; /* Add margin bottom */
+  color: #333; /* Change text color */
+}
+
+#contact form .fields {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  flex-wrap: wrap; /* Allow fields to wrap on smaller screens */
+  margin-bottom: 1.5rem; /* Add margin bottom */
 }
 
-.contact-info-container p {
-  font-size: larger;
+#contact form .field {
+  flex: 1; /* Allow fields to take equal width */
+  margin-bottom: 1.5rem; /* Add margin bottom */
 }
 
-.contact-icon {
-  cursor: default;
+#contact form .field input,
+#contact form .field textarea {
+  width: 100%; /* Set width to fill parent */
+  padding: 0.7rem; /* Add padding */
+  font-size: 1rem; /* Set font size */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
 }
 
-.email-icon {
-  height: 2.5rem;
+#contact form .field textarea {
+  height: 150px; /* Set textarea height */
+  resize: none; /* Disable resizing */
 }
+
+#contact form .button-area {
+  text-align: right; /* Align buttons to right */
+}
+
+#contact form .button-area button {
+  padding: 0.7rem 1.5rem; /* Add padding */
+  font-size: 1rem; /* Set font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #333; /* Set background color */
+  color: #fff; /* Set text color */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+#contact form .button-area button:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+#contact footer {
+  margin-top: 2rem; /* Add margin top */
+}
+
+#contact footer p {
+  text-align: center; /* Center-align text */
+  font-size: 0.9rem; /* Set font size */
+  color: #666; /* Change text color */
+}
+
+
+
 /* activites */
 .codeforces-icon{
   height: 2.5rem;
