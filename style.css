@@ -72,6 +72,8 @@ body {
   
   #hamburger-nav {
     display: none;
+    position: relative;
+    z-index: 999;
   }
   
   .hamburger-menu {
@@ -83,44 +85,52 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
-    width: 30px;
+    height: 22px;
+    width: 28px;
     cursor: pointer;
   }
+  
+  .close-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 28px;
+    cursor: pointer;/* Change the color here */
+  }
+  
   .hamburger-icon span {
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   
   .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: rgb(250, 246, 246);
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #313A5C;
+    padding-top: 80px;
+    overflow-y: auto;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
   }
   
   .menu-links a {
     display: block;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 1.7rem;
+    color: whitesmoke;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
-  }
-  
-  .menu-links li {
-    list-style: none;
+    transition: all 1s ease-in-out;
   }
   
   .menu-links.open {
-    max-height: 300px;
+    transform: translateX(0);
   }
   
   .hamburger-icon.open span:first-child {
@@ -139,13 +149,16 @@ body {
     transform: none;
   }
   
-  .hamburger-icon span:first-child {
+  .hamburger-icon span:nth-child(2) {
     opacity: 1;
   }
   
-  .hamburger-icon span:first-child {
+  .hamburger-icon span:last-child {
     transform: none;
   }
+  
+
+   /* section */
   section {
     padding-top: 4vh;
     height: 96vh;
@@ -158,6 +171,15 @@ body {
     display: flex;
   }
   
+/*  HOME  */
+#home {
+  position: relative;
+  height: 15vh;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  
+}
+
   /* PROFILE SECTION */
   
   #profile {
@@ -277,6 +299,8 @@ body {
   height: 30%;
 }
 
+
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
@@ -312,12 +336,6 @@ body {
   height: 100%;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-  height: 3rem;
-}
 
 .details-container {
   padding: 1rem;
@@ -356,50 +374,58 @@ body {
   width: 100%;
 }
 
-.options {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the start */
+.column.right {
+  flex: 1; 
 }
 
-.option {
-  display: flex;
-  align-items: center;
+.text {
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.skill-name {
-  margin-right: 10px;
-  color: #333;
-  width: 60px; /* Fixed width for skill names */
+.text,
+.p {
+  text-align: justify;
+  font-size: large;
+ /* Justify text */
 }
 
-.scale {
-  position: relative;
-  width: 35vw; /* Adjusted width */
-  height: 5px; /* Adjusted height */
-  background-color: #ddd;
-  border-radius: 10px; /* Rounded border */
-  margin-top: 8px; /* Add some margin */
+.bars {
+  margin-bottom: 1rem;
+}
+
+.progress-name {
+  font-weight: bold;
 }
 
 .progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #3498db; /* Blue color */
-  border-radius: 10px; /* Rounded border */
+  background-color: white;
+  height: 15px;
+  border-radius: 10px;
+  position: relative;
 }
 
-.percentage {
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  color: black;
+.progress-in {
+  height: 60%;
+  border-radius: 10px;
+  background-color: rgb(66, 66, 130);
+  width: 0; /* Set initial width to 0 */
 }
+
+.bars:hover .progress-in {
+  animation: increaseWidth 1s forwards; /* Apply animation on hover */
+}
+
+.skill-percent {
+  position: absolute;
+  right: 0;
+  top: -16px;
+  /* font-size: 0.8rem; */
+}
+.skill-percent span {
+  color: black; /* Set the color of the percentage number */
+}
+
 
 /* PROJECTS SECTION */
 
@@ -442,7 +468,7 @@ body {
   
 }
 
-Center the containers vertically
+/* Center the containers vertically */
 .services__container::after {
   content: '';
   flex: 1;
@@ -493,8 +519,6 @@ Center the containers vertically
 }
 
 
-
-
 /* Contact Section */
 
 #contact {
@@ -525,8 +549,8 @@ Center the containers vertically
   display: flex;
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */
   justify-content: space-between; /* Align content evenly */
-}
 
+}
 #contact .column {
   flex: 1; /* Allow columns to take equal width */
   margin-right: 2rem; /* Add margin between columns */
@@ -625,3 +649,21 @@ Center the containers vertically
   font-size: 0.9rem; /* Set font size */
   color: #666; /* Change text color */
 }
+
+
+
+.arrow {
+  position: absolute;
+  right: 2rem; /* Adjust the distance from the right side */
+  bottom : 5%; 
+  transform: translateY(-30%);
+  height: 3rem;
+}
+arrow,
+.arrow_top {
+  position: absolute;
+  right: 2rem; /* Adjust the distance from the right side */
+  top: 10%; /* Adjust the distance from the top */
+  height: 3rem;
+}
+

@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   </head>
   <body>
+    <section id = "home">
     <nav id="desktop-nav">
       <div class="logo">Sumaiya Rahim</div>
       <div>
@@ -36,10 +37,12 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#activites" onclick="toggleMenu()">Extracurricular Activites</a></li>
+          <li><a href="#activities" onclick="toggleMenu()">Extracurricular Activities</a></li>
         </div>
       </div>
     </nav>
+  </section>
+
     <section id="profile">
         <div class="section__pic-container">
           <img
@@ -88,8 +91,8 @@
     </div>
     </section>
     <section id="about">
-      <h1 class="title">About Me</h1>
       <p class="section__text__p1">My Introduction</p>
+      <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img src="./assets/picture.jpg" alt="Profile picture" class="about-pic" />
@@ -135,64 +138,67 @@
           </div>
         </div>
       </div>
-      <img src="./assets/downicon.png.crdownload" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#experience'" /> -->
     </section>
     
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <br><br>
+      
       <p>I have worked on various languages to make projects and for academic purposes. <br> I recently learnt CSS and JavaScript. I also learnt MySQL to work on databse.</p>
       <!-- Frontend Segment -->
       <br>
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'" /> -->
+  
       <div class="experience-details-container frontend">
         <h2>Frontend Development</h2>
         <p>1 year</p>
         <br>
-        <div class="options">
-          <div class="option">
-            <div class="skill-name"><h4>HTML</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 90%;"></div>
-              <div class="percentage">90%</div>
+        <div class="column right">
+          <div class="bars">
+            <div class="progress-name"><h4>HTML</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 90%;"></div>
+              <div class="skill-percent"><span>90%</span></div>
             </div>
           </div>
-          <div class="option">
-            <div class="skill-name"><h4>CSS</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 70%;"></div>
-              <div class="percentage">70%</div>
+          <div class="bars">
+            <div class="progress-name"><h4>CSS</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 82%;"></div>
+              <div class="skill-percent"><span>82%</span></div>
             </div>
           </div>
-          <div class="option">
-            <div class="skill-name"><h4>JavaScript</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 60%;"></div>
-              <div class="percentage">60%</div>
+          <div class="bars">
+            <div class="progress-name"><h4>JavaScript</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 80%;"></div>
+              <div class="skill-percent"><span>80%</span></div>
             </div>
           </div>
+          
         </div>
       </div>
     
       <!-- Backend Segment -->
       <div class="experience-details-container backend">
-        <h2>Backend Development</h2><br>
+        <h2>Backend Development</h2>
         <p>Two years</p>
         <br>
-        <div class="options">
-          <div class="option">
-            <div class="skill-name"><h4>Python</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 75%;"></div>
-              <div class="percentage">75%</div>
+        <div class="column right">
+          <div class="bars">
+            <div class="progress-name"><h4>Python</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 90%;"></div>
+              <div class="skill-percent"><span>90%</span></div>
             </div>
           </div>
-          <div class="option">
-            <div class="skill-name"><h4>Java</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 70%;"></div>
-              <div class="percentage">70%</div>
+          <div class="bars">
+            <div class="progress-name"><h4>Java</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 60%;"></div>
+                <div class="skill-percent"><span>60%</span></div>
             </div>
           </div>
         </div>
@@ -200,19 +206,20 @@
     
       <!-- Database Design Segment -->
       <div class="experience-details-container database">
-        <h2>Database Design</h2><br>
+        <h2>Database Design</h2>
         <p>Two months</p>
         <br>
-        <div class="options">
-          <div class="option">
-            <div class="skill-name"><h4>MySQL</h4></div>
-            <div class="scale">
-              <div class="progress" style="width: 85%;"></div>
-              <div class="percentage">85%</div>
+        <div class="column right">
+          <div class="bars">
+            <div class="progress-name"><h4>MySQL</h4></div>
+            <div class="progress">
+              <div class="progress-in" style="width: 80%;"></div>
+              <div class="skill-percent"><span>90%</span></div>
             </div>
           </div>
-        </div>
+          </div>
       </div>
+      
     </section>
     
 
@@ -286,19 +293,19 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+        class="arrow"
+        onclick="location.href='./#activities'"
+      /> -->
     </section>
 
   
      
     <section id="activities">
       <p class="section__text__p1">To know more</p>
-      <h1 class="title">Extracurricular <br> Activites</h1>
+      <h1 class="title">Extracurricular <br>Activities</h1>
     
       <div class="services__container container grid">
         <!-- LeetCode -->
@@ -355,12 +362,23 @@
 
 
       </div>
+      <!-- <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    /> -->
     </section>
-    
-   
+
     <section id="contact">
-      <img src="./assets/arrow_top.png" alt="Arrow icon" class="icon arrow_top"
+      <img src="./assets/arrow_top.png" alt="Arrow icon" class="arrow_top"
       onclick="location.href='./#home'">
+      <!-- <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="arrow_top"
+      onclick="location.href='./#home'"
+    /> -->
       <p class="scroll__text-top">Top</p>
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -372,13 +390,13 @@
                   <div class="row">
                       <i class="fas fa-user"></i>
                       <div class="info">
-                          <div class="sub-title">Sumaiya Rahim</div>
+                          <div class="sub-title">Sumaiya</div>
                       </div>
                   </div>
                   <div class="row">
                       <i class="fas fa-map-marker-alt"></i>
                       <div class="info">
-                          <div class="sub-title">Alinagar, Dhaka, Bangladesh</div>
+                          <div class="sub-title">Alinagar , Ashrafabad, Dhaka, Bangladesh</div>
                       </div>
                   </div>
                   <div class="row">
@@ -414,20 +432,24 @@
           </div>
       </div>
     
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#activites">Extracurricular Activities</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- <p>Copyright &#169; . All Rights Reserved.</p> -->
-    </footer>
+      <footer>
+          <nav class="footer-nav">
+              <div class="nav-links-container">
+                  <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#activities">Extracurricular Activities</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <p>Copyright &#169; 2024 Sumaiya Rahim. All Rights Reserved.</p>
+      </footer>
+    </section>
+    
+    
+  
     <script src="script.js"></script>
     </body>
 </html>
