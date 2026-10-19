@@ -1,0 +1,16 @@
+# Go
+backend/.env
+backend/portfolio-backend
+backend/*.db
+backend/tmp/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Deployment secrets
+deploy/deploy.env
+*.pem

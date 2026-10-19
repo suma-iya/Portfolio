@@ -1,0 +1,26 @@
+[Unit]
+Description=Portfolio backend API (Go/Gin)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=portfolio
+Group=portfolio
+WorkingDirectory=/opt/portfolio-api
+ExecStart=/opt/portfolio-api/portfolio-backend
+# Read by systemd as root before dropping to the portfolio user, so the file
+# itself can stay root-only (chmod 600).
+EnvironmentFile=/opt/portfolio-api/.env
+Restart=on-failure
+RestartSec=5
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/portfolio-api
+
+[Install]
+WantedBy=multi-user.target

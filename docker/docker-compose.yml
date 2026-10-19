@@ -1,0 +1,20 @@
+# Local development / EC2 convenience stack. The production path documented
+# in deploy/DEPLOYMENT.md runs the backend as a bare systemd service instead
+# (simpler and cheaper on a free-tier instance), but this is handy for
+# reproducing the exact backend environment locally.
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/backend.Dockerfile
+    env_file:
+      - ../backend/.env
+    environment:
+      # Inside a container the app must listen on all interfaces for the
+      # port mapping to work (the default is loopback only).
+      - HOST=0.0.0.0
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

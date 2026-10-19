@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumaiya Rahim — Backend Engineer (Go) & CSE Graduate</title>
+<meta name="description" content="Sumaiya Rahim — Computer Science & Engineering graduate and backend engineer. Go REST APIs, PostgreSQL/MySQL, Docker Compose deployments, and published research in SoftwareX and IEEE.">
+<meta name="author" content="Sumaiya Rahim">
+<meta property="og:title" content="Sumaiya Rahim — Backend Engineer (Go) & CSE Graduate">
+<meta property="og:description" content="Cloud-native backend services in Go, containerized deployments, and peer-reviewed research.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070b14">
+<link rel="canonical" href="/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Font Awesome loaded non-blocking: it's only for decorative icons, not needed for first paint -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sumaiya Rahim",
+  "jobTitle": "Backend Engineer",
+  "url": "/",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Khulna University of Engineering & Technology"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/sumaiya-rahim-733485294/",
+    "https://github.com/suma-iya",
+    "https://leetcode.com/u/ultra_plusplus/",
+    "https://codeforces.com/profile/another_ded_girl"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar" aria-label="Primary navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">SR<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#ai">AI/ML</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#competitive">CP</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#ai" onclick="closeMobile()">AI / ML</a>
+  <a href="#research" onclick="closeMobile()">Research</a>
+  <a href="#competitive" onclick="closeMobile()">Competitive Programming</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">CSE Graduate · Open to Backend roles</div>
+        <h1 class="hero-name">Sumaiya<br><span class="accent">Rahim</span></h1>
+        <p class="hero-title-line" id="typingLine" aria-live="polite"></p>
+        <p class="hero-desc">Computer Science graduate building cloud-native backend services — Go REST APIs with JWT auth, PostgreSQL and MySQL, and full stacks containerized with Docker Compose. Co-author of peer-reviewed research in SoftwareX and IEEE.</p>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num" data-count="8">0</div><div class="stat-label">Projects Shipped</div></div>
+          <div class="stat"><div class="stat-num" data-count="2">0</div><div class="stat-label">Publications</div></div>
+          <div class="stat"><div class="stat-num" data-count="400" data-suffix="+">0</div><div class="stat-label">CF Problems</div></div>
+          <div class="stat"><div class="stat-num" data-count="480" data-suffix="+">0</div><div class="stat-label">LC Problems</div></div>
+        </div>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+          <a href="assets/docs/Sumaiya_Rahim_CV.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/sumaiya-rahim-733485294/" target="_blank" rel="noopener" class="social-link" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/suma-iya" target="_blank" rel="noopener" class="social-link" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/ultra_plusplus/" target="_blank" rel="noopener" class="social-link" title="LeetCode" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          <a href="https://codeforces.com/profile/another_ded_girl" target="_blank" rel="noopener" class="social-link" title="Codeforces" aria-label="Codeforces"><i class="fas fa-chart-bar"></i></a>
+          <a href="https://scholar.google.com/citations?user=77ZTjfcAAAAJ&hl=en" target="_blank" rel="noopener" class="social-link" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://www.researchgate.net/profile/Sumaiya-Suma-2" target="_blank" rel="noopener" class="social-link" title="ResearchGate" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+          <a href="mailto:sumaiya.rahim234@gmail.com" class="social-link" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-frame">
+          <img src="assets/img/myphoto.jpg" alt="Portrait of Sumaiya Rahim" width="760" height="570" loading="eager" fetchpriority="high">
+        </div>
+        <div class="hero-photo-accent">
+          <div class="num">Dhaka</div>
+          <div class="lbl">Bangladesh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-frame">
+          <img src="assets/img/aboutPhoto.jpg" alt="Sumaiya Rahim working" loading="lazy" width="484" height="760">
+        </div>
+        <div class="about-tag">Class of 2026</div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Backend systems,<br>shipped &amp; researched</h2>
+        <p>I'm a Computer Science &amp; Engineering graduate from KUET with a strong foundation in software engineering and backend development. I work mainly in Go, C++, and Java, building cloud-native backend services, RESTful APIs, and containerized deployments — from GoRent, a rental platform with a rule-based risk engine published in SoftwareX, to LeaveDesk, a leave management system for small companies.</p>
+        <p>I care about clean backend architecture that runs on real infrastructure: hand-written SQL, authentication done properly, Docker Compose stacks that behave the same everywhere, and tests that cover both the API and the browser. I've also co-authored peer-reviewed research on lightweight neural networks for medical image classification.</p>
+        <p>Outside of engineering work, I compete in algorithmic problem solving (400+ Codeforces, 480+ LeetCode problems) and have represented my university at the ICPC Asia Dhaka Regional.</p>
+        <div class="about-chips">
+          <span class="chip">Backend Systems</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Go</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Research</span>
+        </div>
+        <div class="about-edu">
+          <div>
+            <div class="about-edu-degree">B.Sc. in Computer Science &amp; Engineering</div>
+            <div class="about-edu-meta">Khulna University of Engineering &amp; Technology (KUET) · Graduated 2026</div>
+            <div class="about-edu-meta">Coursework: Data Structures &amp; Algorithms, Operating Systems, Computer Networks, Database Systems</div>
+          </div>
+          <div class="about-edu-gpa"><i class="fas fa-star"></i> 3.36 / 4.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">Technical Toolkit</h2>
+      <p class="section-sub">Backend-first: Go services, relational databases, and containerized deployments on Linux — with React and Flutter on the client side.</p>
+    </div>
+    <div class="skills-grid" style="margin-top: 2.5rem;">
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fas fa-code"></i></div><div class="skill-card-title">Languages</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Go</span><span class="skill-tag">C++</span><span class="skill-tag">C</span><span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span><span class="skill-tag">TypeScript</span><span class="skill-tag">SQL</span><span class="skill-tag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fas fa-server"></i></div><div class="skill-card-title">Backend</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">REST APIs</span><span class="skill-tag">net/http</span><span class="skill-tag">Gorilla Mux</span><span class="skill-tag">Gin</span>
+          <span class="skill-tag">JWT</span><span class="skill-tag">OpenID Connect</span><span class="skill-tag">Bcrypt</span><span class="skill-tag">Cron / Schedulers</span><span class="skill-tag">Firebase Cloud Messaging</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fas fa-brain"></i></div><div class="skill-card-title">AI / ML</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span><span class="skill-tag">TensorFlow / Keras</span><span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">CNNs</span><span class="skill-tag">Attention Mechanisms</span><span class="skill-tag">Constraint Optimization</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fas fa-layer-group"></i></div><div class="skill-card-title">Frontend</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span><span class="skill-tag">TanStack Query</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">shadcn/ui</span>
+          <span class="skill-tag">Flutter</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fas fa-database"></i></div><div class="skill-card-title">Databases</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-header"><div class="skill-icon"><i class="fab fa-docker"></i></div><div class="skill-card-title">Cloud &amp; DevOps</div></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span><span class="skill-tag">Docker Compose</span><span class="skill-tag">Linux / Ubuntu</span><span class="skill-tag">Nginx</span>
+          <span class="skill-tag">Git / GitHub</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">AWS</span><span class="skill-tag">systemd</span><span class="skill-tag">Playwright</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Things I've Built</h2>
+      <p class="section-sub">Backend and systems-focused engineering work. See the dedicated AI/ML section below for research-grade projects.</p>
+    </div>
+    <div class="filter-bar reveal" style="margin-top: 2rem;" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+      <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+      <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack</button>
+    </div>
+    <div class="projects-grid" style="margin-top: 1.5rem;">
+
+      <article class="project-card reveal" data-category="backend fullstack mobile">
+        <div class="project-media"><img src="assets/img/projects/gorent.svg" alt="GoRent: tenant risk gauge in the Flutter app, connected to a Go API and MySQL" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">01 · 2025 · PUBLISHED RESEARCH</div>
+          <div class="project-title">GoRent</div>
+          <div class="project-problem">Problem: opaque, manual tenant risk assessment for landlords</div>
+          <p class="project-desc">Property rental management platform with a transparent, deterministic tenant-risk scoring engine — no black-box ML, every score is explainable from observable payment behavior.</p>
+          <div class="project-arch"><strong>Architecture:</strong> Flutter mobile client ↔ Go/Gorilla-Mux REST API (property, tenant, payment &amp; notification endpoints) ↔ MySQL, JWT + bcrypt auth, Firebase Cloud Messaging push, cron-based payment reminders, rule-based conversational interface for risk queries. Full stack containerized with Docker Compose and deployed/tested on Linux/Ubuntu.</div>
+          <div class="project-tech">
+            <span class="tech-tag">Go</span><span class="tech-tag">Flutter</span><span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Firebase</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/GoRent" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.sciencedirect.com/science/article/pii/S2352711026002876" target="_blank" rel="noopener" class="project-link"><i class="fas fa-file-alt"></i> Paper (SoftwareX)</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="backend fullstack">
+        <div class="project-media"><img src="assets/img/projects/leavedesk.svg" alt="LeaveDesk: team leave calendar with an approved leave request" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">02 · 2026 · NEW</div>
+          <div class="project-title">LeaveDesk</div>
+          <div class="project-problem">Problem: small companies tracking leave in spreadsheets and email threads</div>
+          <p class="project-desc">Leave management system where employees request leave and HR approves it, with per-person, per-year leave balances, a team calendar, and CSV exports.</p>
+          <div class="project-arch"><strong>Architecture:</strong> React 19 + TypeScript SPA (TanStack Query, Tailwind CSS, shadcn/ui) ↔ nginx reverse proxy ↔ Go net/http API ↔ PostgreSQL with hand-written SQL and embedded startup migrations. Email/password or Google OpenID Connect sign-in, JWT in httpOnly cookies. Go unit tests + Playwright end-to-end tests.</div>
+          <div class="project-tech">
+            <span class="tech-tag">Go</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span><span class="tech-tag">Docker Compose</span><span class="tech-tag">Playwright</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/LeaveDesk" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="backend">
+        <div class="project-media"><img src="assets/img/projects/business-management.svg" alt="Business Management System: employee hierarchy and payroll chart" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">03</div>
+          <div class="project-title">Business Management System</div>
+          <div class="project-problem">Problem: manual, error-prone workforce salary tracking</div>
+          <p class="project-desc">Object-oriented C++ system for managing Workers, Supervisors, and Managers with automated salary and bonus calculation and file-based reporting.</p>
+          <div class="project-arch"><strong>Architecture:</strong> Class-based OOP design (inheritance across employee roles), computation pipeline writing structured output to file.</div>
+          <div class="project-tech"><span class="tech-tag">C++</span><span class="tech-tag">OOP</span></div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/Business_Management_System" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="fullstack">
+        <div class="project-media"><img src="assets/img/projects/esale.svg" alt="Esale: git branch-and-merge team workflow for an e-commerce store" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">04</div>
+          <div class="project-title">Esale</div>
+          <div class="project-problem">Team-built e-commerce system</div>
+          <p class="project-desc">Collaborative e-commerce platform developed with a team using GitHub-based workflows, code review, and agile development practices.</p>
+          <div class="project-arch"><strong>Architecture:</strong> PHP/MySQL stack, distributed development across multiple contributors with pull-request review cycles.</div>
+          <div class="project-tech"><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">Agile</span></div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/Esale" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="fullstack backend">
+        <div class="project-media"><img src="assets/img/projects/laravel-ecommerce.svg" alt="Laravel e-commerce storefront with product grid and cart" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">05</div>
+          <div class="project-title">Laravel E-Commerce Platform</div>
+          <div class="project-problem">Full-stack retail platform with role-based access</div>
+          <p class="project-desc">MVC e-commerce application with product catalogs (new arrivals, sale, best-sellers), full shopping-cart CRUD, order/checkout processing, and role-based redirects for customers vs. admins.</p>
+          <div class="project-arch"><strong>Architecture:</strong> Laravel MVC, bcrypt-hashed auth with profile picture upload, Cart → Order/OrderItem persistence model, server-rendered Blade views, Laravel Mail integration for transactional email.</div>
+          <div class="project-tech"><span class="tech-tag">Laravel</span><span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span></div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/LaravelEcommerceProject" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="mobile">
+        <div class="project-media"><img src="assets/img/projects/mylearningapp.svg" alt="MyLearningApp: Android lesson list and programming quiz" width="800" height="450" loading="lazy"></div>
+        <div class="project-body">
+          <div class="project-num">06 · 2023</div>
+          <div class="project-title">MyLearningApp</div>
+          <div class="project-problem">Accessible programming education on Android</div>
+          <p class="project-desc">Android learning app for programming education with quizzes, a documentation viewer, and curated external learning resources. A lesson-and-quiz data model tracks learner progress across programming topics.</p>
+          <div class="project-arch"><strong>Architecture:</strong> Firebase Authentication, navigation-drawer + bottom-nav UX, JSON-driven content rendering, Android Navigation Component.</div>
+          <div class="project-tech"><span class="tech-tag">Java</span><span class="tech-tag">Android</span><span class="tech-tag">Firebase</span></div>
+          <div class="project-links">
+            <a href="https://github.com/suma-iya/MyLearningApp" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- AI / ML -->
+<section id="ai">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">AI / ML</div>
+      <h2 class="section-title">Applied Research &amp; Machine Learning</h2>
+      <p class="section-sub">Research-grade work spanning medical imaging, computer vision, and constraint-aware recommendation systems — the DSCBAM-Net work is a peer-reviewed IEEE publication.</p>
+    </div>
+    <div class="ai-list" style="margin-top: 2.5rem;">
+
+      <div class="ai-card reveal">
+        <div class="ai-card-head">
+          <div class="ai-title">Brain Tumor Classification — DSCBAM-Net</div>
+          <div class="ai-badge"><i class="fas fa-check-circle"></i> Published · IEEE EICT 2025</div>
+        </div>
+        <div class="ai-grid">
+          <div><div class="ai-field-label">Problem</div><div class="ai-field-value">Subtle inter-class variation between tumor types under limited clinical compute budgets</div></div>
+          <div><div class="ai-field-label">Dataset</div><div class="ai-field-value">Two clinical brain MRI tumor datasets (glioma / meningioma / pituitary / no-tumor)</div></div>
+          <div><div class="ai-field-label">Model</div><div class="ai-field-value">Lightweight CNN + Grouped Depthwise-Separable CBAM (channel + factorized depthwise spatial attention)</div></div>
+          <div><div class="ai-field-label">Result</div><div class="ai-field-value">97.43% acc / 0.9972 AUC (dataset 1) · 95.96% acc / 0.9951 AUC (dataset 2), fewer params than transfer-learning baselines</div></div>
+        </div>
+        <div class="project-arch"><strong>Pipeline note:</strong> a preprocessing gate classifier (MRI vs. non-MRI, ~98.9% val. accuracy) filters invalid inputs before they reach DSCBAM-Net.</div>
+        <div class="ai-links">
+          <a href="https://doi.org/10.1109/EICT68394.2025.11355571" target="_blank" rel="noopener" class="project-link"><i class="fas fa-file-alt"></i> Paper (IEEE)</a>
+          <a href="https://github.com/suma-iya/BrainTumor_ML" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+
+      <div class="ai-card reveal">
+        <div class="ai-card-head">
+          <div class="ai-title">FoodNetBD — Bilingual Bangladeshi Food Composition Dataset</div>
+          <div class="ai-badge"><i class="fas fa-database"></i> Dataset + Benchmark Suite</div>
+        </div>
+        <div class="ai-grid">
+          <div><div class="ai-field-label">Problem</div><div class="ai-field-value">No open, disease-aware nutrition dataset for Bangladeshi food, in English or Bengali</div></div>
+          <div><div class="ai-field-label">Dataset</div><div class="ai-field-value">600 foods, full nutrient panels, disease-safety tags (safe / restrict / avoid across 9+ conditions), halal status, allergens, seasonal &amp; regional availability</div></div>
+          <div><div class="ai-field-label">Benchmarks</div><div class="ai-field-value">6-task suite: multi-label disease classification, constraint-aware retrieval, nutrient-adequacy regression, nutrient-density ranking, bilingual embedding quality, seasonal coverage-gap analysis</div></div>
+          <div><div class="ai-field-label">Sources</div><div class="ai-field-value">INFS Bangladesh Food Composition Tables, USDA FoodData Central</div></div>
+        </div>
+        <div class="ai-links">
+          <a href="https://github.com/suma-iya/DietRL" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+
+      <div class="ai-card reveal">
+        <div class="ai-card-head">
+          <div class="ai-title">My Food Advisor — Constraint-Aware Diet Planner</div>
+          <div class="ai-badge"><i class="fas fa-utensils"></i> Applied ML</div>
+        </div>
+        <div class="ai-grid">
+          <div><div class="ai-field-label">Problem</div><div class="ai-field-value">Generic diet apps ignore disease-specific dietary restrictions and regional food availability</div></div>
+          <div><div class="ai-field-label">Dataset</div><div class="ai-field-value">Built on FoodNetBD's 600-food nutrient &amp; disease-tag corpus</div></div>
+          <div><div class="ai-field-label">Model</div><div class="ai-field-value">Reward-based meal planner factoring glycemic index and biomarkers through a nutrient constraint solver</div></div>
+          <div><div class="ai-field-label">Output</div><div class="ai-field-value">Personalized meal plans matching a user's medical/dietary profile</div></div>
+        </div>
+        <div class="ai-links">
+          <a href="https://github.com/suma-iya/DietRL" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+
+      <div class="ai-card reveal">
+        <div class="ai-card-head">
+          <div class="ai-title">Leaf Disease Detection</div>
+          <div class="ai-badge"><i class="fas fa-leaf"></i> Computer Vision</div>
+        </div>
+        <div class="ai-grid">
+          <div><div class="ai-field-label">Problem</div><div class="ai-field-value">Fast, accessible plant-disease severity assessment without a labeled training set</div></div>
+          <div><div class="ai-field-label">Approach</div><div class="ai-field-value">Classical CV pipeline — no trained model required</div></div>
+          <div><div class="ai-field-label">Architecture</div><div class="ai-field-value">HSV/LAB color-space segmentation, Canny edge detection, contour-based background removal, bud/new-growth false-positive filtering</div></div>
+          <div><div class="ai-field-label">Output</div><div class="ai-field-value">Severity classification (healthy → critical) by disease-pixel coverage percentage, via a Streamlit interface</div></div>
+        </div>
+        <div class="ai-links">
+          <a href="https://github.com/suma-iya/ImageProject" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- RESEARCH TIMELINE -->
+<section id="research">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Research</div>
+      <h2 class="section-title">Publications</h2>
+    </div>
+    <div class="timeline" style="margin-top: 2.5rem;">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="research-card">
+          <div class="research-title">GoRent: Open-Source Software for Transparent, Rule-Based Rental Risk Assessment and Intervention Support</div>
+          <div class="research-meta-row">
+            <span class="research-venue"><i class="fas fa-book"></i> SoftwareX (Elsevier) · Article 102795 · 2026</span>
+            <span class="research-status">Published</span>
+          </div>
+          <p class="research-summary">Open-source platform combining tenancy management with an interpretable, rule-based risk-scoring workflow — risk summaries are derived deterministically from observable payment indicators rather than opaque predictive models.</p>
+          <div class="research-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S2352711026002876" target="_blank" rel="noopener" class="project-link"><i class="fas fa-file-alt"></i> Paper</a>
+            <a href="https://github.com/suma-iya/GoRent" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="research-card">
+          <div class="research-title">DSCBAM-Net: A Lightweight Neural Network with Grouped Depthwise-Separable CBAM for Automated Brain Tumor Classification</div>
+          <div class="research-meta-row">
+            <span class="research-venue"><i class="fas fa-university"></i> 7th IEEE International Conference on Electrical Information &amp; Communication Technology (EICT 2025), Khulna</span>
+            <span class="research-status">Published</span>
+          </div>
+          <p class="research-summary">Lightweight CNN integrating grouped channel attention and factorized depthwise spatial attention; outperforms transfer-learning baselines with fewer parameters — 97.43% / 95.96% accuracy across two clinical MRI datasets.</p>
+          <div class="research-links">
+            <a href="https://doi.org/10.1109/EICT68394.2025.11355571" target="_blank" rel="noopener" class="project-link"><i class="fas fa-file-alt"></i> Paper · DOI 10.1109/EICT68394.2025.11355571</a>
+            <a href="https://github.com/suma-iya/BrainTumor_ML" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- COMPETITIVE PROGRAMMING -->
+<section id="competitive">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Competitive Programming</div>
+      <h2 class="section-title">Contest Track Record</h2>
+    </div>
+    <div class="cp-stats-grid" style="margin-top: 2.5rem;">
+      <div class="cp-stat-card reveal"><div class="cp-stat-num" data-count="400" data-suffix="+">0</div><div class="cp-stat-label">Codeforces Problems Solved</div></div>
+      <div class="cp-stat-card reveal"><div class="cp-stat-num" data-count="480" data-suffix="+">0</div><div class="cp-stat-label">LeetCode Problems Solved</div></div>
+      <div class="cp-stat-card reveal"><div class="cp-stat-num" data-count="1">0</div><div class="cp-stat-label">ICPC Regional</div></div>
+      <div class="cp-stat-card reveal"><div class="cp-stat-num" data-count="8">0</div><div class="cp-stat-label">Best Contest Rank</div></div>
+    </div>
+    <div class="cp-grid" style="margin-top: 1.5rem;">
+      <div class="cp-card reveal">
+        <div class="cp-icon">🏆</div>
+        <div><div class="cp-title">ICPC Asia Dhaka Regional 2024</div><div class="cp-meta">Regional Contestant</div></div>
+      </div>
+      <div class="cp-card reveal">
+        <div class="cp-icon">👩‍💻</div>
+        <div><div class="cp-title">National Girls Programming Contest 2022</div><div class="cp-meta">Participant</div></div>
+      </div>
+      <div class="cp-card reveal">
+        <div class="cp-icon">🥇</div>
+        <div><div class="cp-title">Codemania Programming Contest 2023</div><div class="cp-meta">Ranked 8th</div></div>
+      </div>
+      <div class="cp-card reveal">
+        <div class="cp-icon">⚡</div>
+        <div><div class="cp-title"><a href="https://codeforces.com/profile/another_ded_girl" target="_blank" rel="noopener">Codeforces</a></div><div class="cp-meta">400+ problems solved · another_ded_girl</div></div>
+      </div>
+      <div class="cp-card reveal">
+        <div class="cp-icon">🎯</div>
+        <div><div class="cp-title"><a href="https://leetcode.com/u/ultra_plusplus/" target="_blank" rel="noopener">LeetCode</a></div><div class="cp-meta">480+ problems solved · ultra_plusplus</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Get In Touch</h2>
+    </div>
+    <div class="contact-grid" style="margin-top: 2.5rem;">
+      <div class="contact-info reveal">
+        <a href="tel:+8801537617361" class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+          <div><div class="contact-item-label">Phone</div><div class="contact-item-value">+880-1537617361</div></div>
+        </a>
+        <a href="mailto:sumaiya.rahim234@gmail.com" class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+          <div><div class="contact-item-label">Email</div><div class="contact-item-value">sumaiya.rahim234@gmail.com</div></div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="contact-item-label">Location</div><div class="contact-item-value">Dhaka, Bangladesh</div></div>
+        </div>
+        <a href="https://www.linkedin.com/in/sumaiya-rahim-733485294/" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div><div class="contact-item-label">LinkedIn</div><div class="contact-item-value">sumaiya-rahim-733485294</div></div>
+        </a>
+        <a href="https://github.com/suma-iya" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+          <div><div class="contact-item-label">GitHub</div><div class="contact-item-value">suma-iya</div></div>
+        </a>
+        <a href="https://leetcode.com/u/ultra_plusplus/" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-code"></i></div>
+          <div><div class="contact-item-label">LeetCode</div><div class="contact-item-value">ultra_plusplus</div></div>
+        </a>
+        <a href="https://codeforces.com/profile/another_ded_girl" target="_blank" rel="noopener" class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-chart-bar"></i></div>
+          <div><div class="contact-item-label">Codeforces</div><div class="contact-item-value">another_ded_girl</div></div>
+        </a>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required minlength="2" maxlength="100">
+            <div class="form-error" id="nameError"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required maxlength="255">
+            <div class="form-error" id="emailError"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" placeholder="What's this about?" maxlength="200">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="6" placeholder="Your message..." required minlength="10" maxlength="5000"></textarea>
+          <div class="form-error" id="messageError"></div>
+        </div>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <button type="submit" class="btn btn-primary" id="submitBtn" style="align-self: flex-start;">
+          <i class="fas fa-paper-plane"></i> <span>Send Message</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#hero" class="footer-logo">Sumaiya Rahim<span>.</span></a>
+    <p class="footer-copy">© 2026 Sumaiya Rahim. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/sumaiya-rahim-733485294/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/suma-iya" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:sumaiya.rahim234@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
