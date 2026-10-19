@@ -4,9 +4,10 @@
   // ==========================================================================
   // CONFIG
   // ==========================================================================
-  // In production the site and API share one origin on EC2 (Nginx serves the
-  // files and proxies /api/* to the Go backend), so the base URL is empty and
-  // requests go to the same host. Locally the Go server runs on :8080.
+  // In production the site and API share one origin — on Vercel (vercel.json
+  // rewrites /api/v1/contact to the Go function in api/) or on EC2 (Nginx
+  // proxies /api/* to the Go backend) — so the base URL is empty and requests
+  // go to the same host. Locally the Go server runs on :8080.
   const isLocalDev = ['localhost', '127.0.0.1'].includes(window.location.hostname);
   const CONFIG = {
     API_BASE_URL: window.PORTFOLIO_API_BASE_URL ?? (isLocalDev ? 'http://localhost:8080' : ''),

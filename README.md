@@ -12,7 +12,9 @@ portfolio/
 │   ├── css/style.css
 │   ├── js/main.js
 │   └── assets/
-├── backend/            # Go + Gin REST API
+├── api/contact.go      # Vercel serverless contact-form function (Go)
+├── vercel.json         # Vercel config: serves frontend/, routes /api
+├── backend/            # Go + Gin REST API (for EC2)
 │   ├── cmd/server/     # main.go — entrypoint
 │   └── internal/
 │       ├── config/     # env-driven configuration
@@ -49,6 +51,23 @@ it posts to its own origin (`/api/v1/contact`), which Nginx proxies to Go.
 Override with `window.PORTFOLIO_API_BASE_URL` set before `main.js` loads.
 
 ## Deployment
+
+### Vercel (free, no credit card)
+
+The site and contact form run on Vercel's free Hobby plan. `vercel.json`
+serves `frontend/` and routes `/api/v1/contact` to the Go function in
+`api/contact.go`, a dependency-free version of `backend/` that uses the same
+validation, email format and environment variables.
+
+1. Sign in at [vercel.com](https://vercel.com) with GitHub (no card needed).
+2. **Add New → Project**, import this repository, keep the defaults, deploy.
+3. **Settings → Environment Variables**, add `SMTP_USERNAME` and
+   `SMTP_PASSWORD` (a Gmail App Password), then **Redeploy**.
+   Optional: `SMTP_FROM`, `CONTACT_TO_EMAIL`, `RATE_LIMIT_PER_MINUTE`.
+
+Every push to `master` redeploys automatically.
+
+### AWS EC2
 
 Everything runs on one free-tier AWS EC2 instance (Ubuntu 24.04): Nginx
 serves the site and proxies `/api` to the Go service; Let's Encrypt for HTTPS.

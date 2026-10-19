@@ -1,0 +1,6 @@
+# Only frontend/, api/, go.mod and vercel.json are needed on Vercel.
+# These are for the EC2 deployment.
+backend/
+deploy/
+docker/
+nginx/
