@@ -1,6 +1,8 @@
 # Sumaiya Rahim — Portfolio
 
-A backend/applied-AI engineering portfolio. Static frontend (no framework),
+**Live site: [sumaiya-rahim.vercel.app](https://sumaiya-rahim.vercel.app)**
+
+A backend engineering portfolio. Static frontend (no framework),
 Go/Gin backend for a Gmail-SMTP contact form — no third-party form services.
 
 ## Structure
