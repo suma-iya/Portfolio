@@ -119,9 +119,9 @@
   // ==========================================================================
   const typingEl = document.getElementById('typingLine');
   const phrases = [
-    'Building backend services in Go.',
-    'Shipping containerized stacks with Docker Compose.',
-    'Publishing research in SoftwareX & IEEE.',
+    'Software engineer building backends in Go.',
+    'ICPC Asia Dhaka Regionalist.',
+    'Hands-on with ML, Deep Learning & NLP.',
   ];
 
   function typeLoop() {
